@@ -16,12 +16,12 @@ Syntax highlighted code block
 ### Header 3
 
 - Bulleted
- Open Coviar cvs. file
- Change column 
- Change index
- Turn into dataframe from adjancy matrix
- Turn dataframe into graph
- Use networkx to check graph node, edge, statistics information
+  Open Coviar cvs. file
+  Change column 
+  Change index
+  Turn into dataframe from adjancy matrix
+  Turn dataframe into graph
+  Use networkx to check graph node, edge, statistics information
 
 1. Numbered
    Phase1, Phase2, Phase3, ... Phase1
@@ -33,6 +33,8 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
+# Code: 
+
 create_using = [nx.DiGraph(G[i]) for i in range(1,12)]
 d = [nx.algorithms.link_analysis.hits(create_using[i], max_iter=1000000) for i in range(len(create_using))]
 print(d)

@@ -16,15 +16,31 @@ Syntax highlighted code block
 ### Header 3
 
 - Bulleted
-- List
+ Open Coviar cvs. file
+ Change column 
+ Change index
+ Turn into dataframe from adjancy matrix
+ Turn dataframe into graph
+ Use networkx to check graph node, edge, statistics information
 
 1. Numbered
-2. List
+   Phase1, Phase2, Phase3, ... Phase1
+3. List
+   Graph 1, Graph2, Graph3, ... Graph11
+   
 
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
 ```
+create_using = [nx.DiGraph(G[i]) for i in range(1,12)]
+d = [nx.algorithms.link_analysis.hits(create_using[i], max_iter=1000000) for i in range(len(create_using))]
+print(d)
+
+
+
+
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
